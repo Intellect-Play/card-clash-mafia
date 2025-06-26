@@ -14,21 +14,21 @@ public class ShopButtons : MonoBehaviour
         Debug.Log("ShopManager: ShopTutorial - Tutorial Level 0");
 
         if (BuyImage == null) return;
-        if (PlayerPrefs.GetInt("Tutorial2", 0) == 0)
-        {
-            StartButton.anchorMin = new Vector2(0.5f, 0);
-            StartButton.anchorMax = new Vector2(0.5f, 0);
-            StartButton.pivot = new Vector2(0.5f, 0);
-            StartButton.anchoredPosition = new Vector2(0, 175);
-            gameObject.SetActive(false);
-        }
-        if (StartButton != null && (PlayerPrefs.GetInt("Tutorial2", 0) == 1))
-        {
-            Debug.Log("ShopManager: ShopTutorial - Tutorial Level 1");
+        //if (PlayerPrefs.GetInt("Tutorial2", 0) == 0)
+        //{
+        //    StartButton.anchorMin = new Vector2(0.5f, 0);
+        //    StartButton.anchorMax = new Vector2(0.5f, 0);
+        //    StartButton.pivot = new Vector2(0.5f, 0);
+        //    StartButton.anchoredPosition = new Vector2(0, 175);
+        //    gameObject.SetActive(false);
+        //}
+        //if (StartButton != null && (PlayerPrefs.GetInt("Tutorial2", 0) == 1))
+        //{
+        //    Debug.Log("ShopManager: ShopTutorial - Tutorial Level 1");
 
-            TutorialManager.Instance.TutorialHandClickButtonShop(this.GetComponent<RectTransform>());
+        //    TutorialManager.Instance.TutorialHandClickButtonShop(this.GetComponent<RectTransform>());
 
-        }
+        //}
 
         if (BuyImage != null)BuyImage.SetActive(CheckBuyCondition());
     }

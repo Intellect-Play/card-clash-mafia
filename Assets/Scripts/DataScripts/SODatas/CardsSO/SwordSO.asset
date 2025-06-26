@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SwordSO
   m_EditorClassIdentifier: 
   _CardType: 11
-  _CardImage: {fileID: 21300000, guid: 801b315145bf2314084c45dcdb20a8a3, type: 3}
+  _CardImage: {fileID: 21300000, guid: 93d4f89576b02774192c513e7809a580, type: 3}
   _CardCost: {fileID: 0}
   _CardPower: 0
   _CardRange: 0

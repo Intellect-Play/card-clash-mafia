@@ -27,7 +27,7 @@ public class Board : MonoBehaviour
     [HideInInspector]
     public Cell[,] mAllCells;
     public static int cellX = 4;
-    public static int cellY = 8;
+    public static int cellY = 6;
 
     int rectWidth = 160;
    

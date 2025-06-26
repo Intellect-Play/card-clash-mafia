@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _HealthEnemy: 0
   _AttackDistance: 0
-  _EnemyImage: {fileID: 21300000, guid: 05a544e0d998bee429f8c075a3def760, type: 3}
+  _EnemyImage: {fileID: 21300000, guid: 470a9c6c35cb75c45a72a6e477129667, type: 3}

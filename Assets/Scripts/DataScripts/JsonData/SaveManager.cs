@@ -17,7 +17,7 @@ public class SaveManager : MonoBehaviour
             //ResetData();
 
             Instance = this;
-            savePath = Application.persistentDataPath + "/saveDatas5.json";
+            savePath = Application.persistentDataPath + "/saveDatas6.json";
             jsonPath = Path.Combine(Application.persistentDataPath, "Data/cards");
          //PlayerPrefs.DeleteAll(); // Test purposes, remove later
             LoadData();

@@ -50,7 +50,7 @@ public abstract class BasePiece : MonoBehaviour
         mPieceManager = newPieceManager;
         mColor = newTeamColor;
         mRectTransform = GetComponent<RectTransform>();
-        if(newTeamColor == Color.black) GetComponent<Image>().sprite = enemySO._EnemyImage;
+        GetComponent<Image>().sprite = enemySO._EnemyImage;
 
     }
 

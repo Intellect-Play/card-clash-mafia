@@ -21,30 +21,30 @@ public class BattleButton : MonoBehaviour
 
         }
     }
-    private void OnEnable()
-    {
-        if(PlayerPrefs.GetInt("Tutorial2", 0) == 3)
-        {
-            TutorialManager.Instance.IsTutorialActive = true;
+    //private void OnEnable()
+    //{
+    //    if(PlayerPrefs.GetInt("Tutorial2", 0) == 3)
+    //    {
+    //        TutorialManager.Instance.IsTutorialActive = true;
 
-            PlayerPrefs.SetInt("Tutorial2", 4); // Set tutorial to next level
-            TutorialManager.Instance.TutorialHandClickButton(this.GetComponent<RectTransform>());
-            TutorialManager.Instance.IsTutorialActive = false;
-            ShopButton.interactable = false; // Disable shop button during tutorial
-        }
-    }
+    //        PlayerPrefs.SetInt("Tutorial2", 4); // Set tutorial to next level
+    //        TutorialManager.Instance.TutorialHandClickButton(this.GetComponent<RectTransform>());
+    //        TutorialManager.Instance.IsTutorialActive = false;
+    //        ShopButton.interactable = false; // Disable shop button during tutorial
+    //    }
+    //}
 
     void StartBattle() {
-        if (PlayerPrefs.GetInt("Tutorial2", 0) == 4)
-        {
-            TutorialManager.Instance.IsTutorialActive = true;
-            ShopButton.interactable = true; // Disable shop button during tutorial
+        //if (PlayerPrefs.GetInt("Tutorial2", 0) == 4)
+        //{
+        //    TutorialManager.Instance.IsTutorialActive = true;
+        //    ShopButton.interactable = true; // Disable shop button during tutorial
 
-            PlayerPrefs.SetInt("Tutorial2", 5); // Set tutorial to next level
-            TutorialManager.Instance.HideTutorialMoveHand();
-            TutorialManager.Instance.IsTutorialActive = false;
+        //    PlayerPrefs.SetInt("Tutorial2", 5); // Set tutorial to next level
+        //    TutorialManager.Instance.HideTutorialMoveHand();
+        //    TutorialManager.Instance.IsTutorialActive = false;
 
-        }
+        //}
         Debug.Log("BattleButton: StartBattle - Starting Battle");
         TutorialManager.Instance.HideTutorialHand();
         StartCoroutine(FadeTime());

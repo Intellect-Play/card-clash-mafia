@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 222139883164056802}
   - component: {fileID: 114742050372184844}
   - component: {fileID: -4301230201614245016}
-  - component: {fileID: 3226356128926267016}
   m_Layer: 5
   m_Name: Enemy3
   m_TagString: Untagged
@@ -70,7 +69,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 62808691f89a62a4a83b03ce36603401, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -112,27 +111,6 @@ MonoBehaviour:
   duration: 0.5
   skilet: 0800000008000000080000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000e0000000e0000000e0000000e0000000e0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f000000100000001000000010000000100000001000000010000000
   AddHealth: 8
---- !u!95 &3226356128926267016
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1574190171488166}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5d0f598d8e1a6a44e8b208d68df122aa, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &2344988420546477319
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 222139883164056802}
   - component: {fileID: 114742050372184844}
   - component: {fileID: -6283098595504087253}
-  - component: {fileID: 3358404998417002127}
   m_Layer: 5
   m_Name: _King
   m_TagString: Untagged
@@ -69,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 35d3d17066aa7714b8d25ec1038026e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ce950d68f7067b54391d462982c6b9db, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -91,12 +90,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e85a6b32de5ece14d81db1b61fe49346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySO: {fileID: 0}
+  enemySO: {fileID: 11400000, guid: 4ad3f369924c25944b25fd9581c29e68, type: 2}
   mColor: {r: 0, g: 0, b: 0, a: 0}
   mIsFirstMove: 1
   mOriginalCell: {fileID: 0}
   mCurrentCell: {fileID: 0}
   moveAnime: {fileID: 3211708435485389167}
+  PowerText: {fileID: 0}
   mRectTransform: {fileID: 0}
   mPieceManager: {fileID: 0}
   mTargetCell: {fileID: 0}
@@ -111,28 +111,6 @@ MonoBehaviour:
   targetImage: {fileID: 0}
   duration: 0.5
   isDragging: 0
---- !u!95 &3358404998417002127
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1574190171488166}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 25f85e2cee1704d4394c8ba8d0abc1e6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &422799094266210021
 GameObject:
   m_ObjectHideFlags: 0

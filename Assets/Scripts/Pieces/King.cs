@@ -13,7 +13,7 @@ public class King : BasePiece
         moveAnime.SetActive(false);
         // King setup
         mMovement = new Vector3Int(2, 2, 1);
-        GetComponent<Image>().sprite = Resources.Load<Sprite>("Player");
+        //GetComponent<Image>().sprite = Resources.Load<Sprite>("Player");
         Heal.SetActive(false);
     }
 

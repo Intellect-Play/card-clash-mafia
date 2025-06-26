@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa11ec82e9746928e211e7f096812ca, type: 3}
+  m_Name: Settings
+  m_EditorClassIdentifier: 
+  gameAnalyticsIosGameKey: 
+  gameAnalyticsIosSecretKey: 
+  gameAnalyticsAndroidGameKey: f95118e9f53a23b224dd49123990e88c
+  gameAnalyticsAndroidSecretKey: 8335cfb937f8753737c9a3f1ac79bb1f758a338b
+  facebookAppId: 1774254540155026
+  facebookClientToken: 471ce997a31b0f4fb29d2f6ba8b1a41d
+  adjustIOSToken: 
+  adjustAndroidToken: d2y7xa2489a8
+  EditorIdfa: 0277a46f-5801-4c6e-8651-8fbd045eef5d
+  UseRemoteConfig: 0
+  UseVoodooAnalytics: 1
+  companyName: BGAI Tech
+  privacyPolicyURL: https://bgaitechstudio.com/cardclash-privacy-policy
+  developerContactEmail: cooperate@bgaitechstudio.com

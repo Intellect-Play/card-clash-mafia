@@ -1,0 +1,124 @@
+{
+  "cards": [
+    {
+      "id": 0,
+      "name": "Move",
+      "power": 10,
+      "level": 1,
+      "isUnlocked": true,
+      "buyCost": 100,
+      "upgradeCost": 150,
+      "update": false
+    },
+    {
+      "id": 1,
+      "name": "Bomb3x3",
+      "power": 12,
+      "level": 1,
+      "isUnlocked": true,
+      "buyCost": 120,
+      "upgradeCost": 150,
+      "update": true
+    },
+    {
+      "id": 2,
+      "name": "Bat",
+      "power": 10,
+      "level": 1,
+      "isUnlocked": true,
+      "buyCost": 130,
+      "upgradeCost": 150,
+      "update": true
+    },
+    {
+      "id": 3,
+      "name": "DoubleFire",
+      "power": 10,
+      "level": 1,
+      "isUnlocked": false,
+      "buyCost": 140,
+      "upgradeCost": 150,
+      "update": true
+    },
+    {
+      "id": 4,
+      "name": "LinearFire",
+      "power": 10,
+      "level": 1,
+      "isUnlocked": false,
+      "buyCost": 150,
+      "upgradeCost": 150,
+      "update": true
+    },
+    {
+      "id": 5,
+      "name": "Pyramide",
+      "power": 8,
+      "level": 1,
+      "isUnlocked": false,
+      "buyCost": 160,
+      "upgradeCost": 150,
+      "update": true
+    },
+    {
+      "id": 6,
+      "name": "PushBack",
+      "power": 13,
+      "level": 1,
+      "isUnlocked": false,
+      "buyCost": 110,
+      "upgradeCost": 150,
+      "update": false
+    },
+    {
+      "id": 7,
+      "name": "StrongStrike",
+      "power": 12,
+      "level": 1,
+      "isUnlocked": false,
+      "buyCost": 180,
+      "upgradeCost": 150,
+      "update": true
+    },
+    {
+      "id": 8,
+      "name": "BombDouble",
+      "power": 12,
+      "level": 1,
+      "isUnlocked": false,
+      "buyCost": 170,
+      "upgradeCost": 150,
+      "update": true
+    },
+    {
+      "id": 9,
+      "name": "Meteor5x",
+      "power": 15,
+      "level": 1,
+      "isUnlocked": false,
+      "buyCost": 200,
+      "upgradeCost": 150,
+      "update": true
+    },
+    {
+      "id": 10,
+      "name": "Sword",
+      "power": 9,
+      "level": 1,
+      "isUnlocked": false,
+      "buyCost": 90,
+      "upgradeCost": 150,
+      "update": true
+    },
+    {
+      "id": 11,
+      "name": "Healer",
+      "power": 8,
+      "level": 1,
+      "isUnlocked": false,
+      "buyCost": 80,
+      "upgradeCost": 150,
+      "update": false
+    }
+  ]
+}

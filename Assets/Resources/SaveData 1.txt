@@ -1,0 +1,7 @@
+{
+  "playerData": {
+    "health": 4,
+    "coins": 150,
+    "currentLevel": 1
+  }
+}

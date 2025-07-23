@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bomb3x3SO
   m_EditorClassIdentifier: 
   _CardType: 1
-  _CardImage: {fileID: 21300000, guid: f43958496858e7c4381bcee4001f8277, type: 3}
+  _CardImage: {fileID: 21300000, guid: b1e64d5f015954047a1ed8291fb07e40, type: 3}
   _CardCost: {fileID: 0}
   _CardPower: 0
   _CardRange: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DoubleFireSO
   m_EditorClassIdentifier: 
   _CardType: 3
-  _CardImage: {fileID: 21300000, guid: 93d4f89576b02774192c513e7809a580, type: 3}
+  _CardImage: {fileID: 21300000, guid: 10d1367e79152754d9ebd8a27a208a5e, type: 3}
   _CardCost: {fileID: 0}
   _CardPower: 0
   _CardRange: 0

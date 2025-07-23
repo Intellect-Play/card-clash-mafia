@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PushBackSO
   m_EditorClassIdentifier: 
   _CardType: 6
-  _CardImage: {fileID: 21300000, guid: e765581cf82843e4f8da332b5774728c, type: 3}
+  _CardImage: {fileID: 21300000, guid: c07ff0754b74d4a45bfe0a3dc338daa4, type: 3}
   _CardCost: {fileID: 0}
   _CardPower: 0
   _CardRange: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MoveSO
   m_EditorClassIdentifier: 
   _CardType: 10
-  _CardImage: {fileID: 21300000, guid: 81806a50d248de449a8ccd7c0e75f3ab, type: 3}
+  _CardImage: {fileID: 21300000, guid: 9ecbf79d79bed444abf995286fa7ec6c, type: 3}
   _CardCost: {fileID: 0}
   _CardPower: 0
   _CardRange: 0

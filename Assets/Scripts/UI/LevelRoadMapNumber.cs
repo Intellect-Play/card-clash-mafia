@@ -23,7 +23,7 @@ public class LevelRoadMapNumber : MonoBehaviour
         Color targetColor;
         if (active)
         {
-            ColorUtility.TryParseHtmlString("#41CCF1", out targetColor);
+            ColorUtility.TryParseHtmlString("#4ADE80", out targetColor);
         }
         else
         {

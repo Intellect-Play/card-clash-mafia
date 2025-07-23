@@ -57,6 +57,7 @@ public class CardClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, 
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        Debug.Log("Down");
         if(Used)return;
         if (CardManagerMove.MoveCard) return;
         card.mKing.MoveCardCick(this);
@@ -123,6 +124,7 @@ public class CardClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, 
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        Debug.Log("Enter");
         if (Used) return;
 
         if (CardManagerMove.MoveCard) return;

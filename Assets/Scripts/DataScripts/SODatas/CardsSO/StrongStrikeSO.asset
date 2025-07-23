@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: StrongStrikeSO
   m_EditorClassIdentifier: 
   _CardType: 7
-  _CardImage: {fileID: 21300000, guid: 7ce09a4030726c842b5943e83bf964fd, type: 3}
+  _CardImage: {fileID: 21300000, guid: 00d682802a4c44a46bf0bbe4142e33a6, type: 3}
   _CardCost: {fileID: 0}
   _CardPower: 0
   _CardRange: 0

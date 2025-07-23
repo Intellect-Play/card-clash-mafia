@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LinearFireSO
   m_EditorClassIdentifier: 
   _CardType: 4
-  _CardImage: {fileID: 21300000, guid: b6462c3ad74fa304bad830f9d290dd20, type: 3}
+  _CardImage: {fileID: 21300000, guid: c3802ce2a3fc843429e20857555d15fc, type: 3}
   _CardCost: {fileID: 0}
   _CardPower: 0
   _CardRange: 0

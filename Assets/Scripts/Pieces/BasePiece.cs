@@ -85,7 +85,7 @@ public abstract class BasePiece : MonoBehaviour
         {
             if (mCurrentCell != null)
                 mCurrentCell.mCurrentPiece = null;
-            GameManager.Instance.ChangeCoin(10);
+            GameManager.Instance.ChangeCoin(15);
             PieceManager.Instance.KillEnemy(this);
         }       
     }

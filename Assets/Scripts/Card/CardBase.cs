@@ -94,7 +94,6 @@ public abstract class CardBase : BasePiece
 
     public void Vibrate()
     {
-        Handheld.Vibrate();
     }
    
     public GameObject GetGameObject() => gameObject;

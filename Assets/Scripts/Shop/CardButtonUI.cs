@@ -66,12 +66,12 @@ public class CardButtonUI : MonoBehaviour
         SetAnchorPivotToCenterPreservePosition();
         if (Active)
         {
-            targetRectTransform.DOScale(1.2f, 0.25f)
+            targetRectTransform.DOScale(1.6f, 0.25f)
        .SetEase(Ease.OutBack);
         }
         else
         {
-            targetRectTransform.DOScale(1f, 0.25f).SetEase(Ease.OutBack);
+            targetRectTransform.DOScale(1.3f, 0.25f).SetEase(Ease.OutBack);
         }
        
     }
@@ -120,7 +120,7 @@ public class CardButtonUI : MonoBehaviour
 
         // 5. Eski pozisyona, boyuta ve rotasyona geri dönme
         sequence.Append(targetRectTransform.DOAnchorPos(originalAnchoredPos, 0.25f).SetEase(Ease.InOutQuad));
-        sequence.Join(targetRectTransform.DOScale(1, 0.25f).SetEase(Ease.InOutQuad));
+        sequence.Join(targetRectTransform.DOScale(1.3f, 0.25f).SetEase(Ease.InOutQuad));
         sequence.Join(targetRectTransform.DORotate(originalRotation, 0.25f).SetEase(Ease.InOutQuad)).OnComplete(() => {
             ShopManager.ShopActive = true;
             UpgradeAnimation.SetActive(false);

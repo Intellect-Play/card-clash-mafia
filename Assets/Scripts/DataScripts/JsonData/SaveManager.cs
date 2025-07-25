@@ -19,17 +19,17 @@ public class SaveManager : MonoBehaviour
             Instance = this;
             savePath = Application.persistentDataPath + "/saveDatas6.json";
             jsonPath = Path.Combine(Application.persistentDataPath, "Data/cards");
-         //PlayerPrefs.DeleteAll(); // Test purposes, remove later
+            //PlayerPrefs.DeleteAll(); // Test purposes, remove later
             LoadData();
             Load();
-//saveData.playerData.coins = 50000; // Test purposes, remove later
+            //saveData.playerData.coins = 50000; // Test purposes, remove later
             if (PlayerPrefs.GetInt("Tutorial2", 0) == 0)
             {
                 ResetData();
             }
             //saveData.playerData.currentLevel = 2;
             //ResetData(); File.Delete(jsonPath);
-            if (saveData.playerData.currentLevel>30) saveData.playerData.currentLevel = 2;
+            if (saveData.playerData.currentLevel > 10) saveData.playerData.currentLevel = 2;
         }
         else
         {
@@ -81,6 +81,7 @@ public class SaveManager : MonoBehaviour
             }
         }
     }
+
     public void DeleteSaveFile()
     {
         jsonPath = Path.Combine(Application.persistentDataPath, "Data/cards.json");
@@ -96,7 +97,6 @@ public class SaveManager : MonoBehaviour
         }
     }
 
-
     public void SaveData()
     {
         Save();
@@ -110,19 +110,21 @@ public class SaveManager : MonoBehaviour
         File.WriteAllText(jsonPath, json);
     }
 
-
     #endregion
+
     public void Save()
     {
+        // saveData-nı PlayerPrefs-ə serialize edib saxlayırıq
         string json = JsonUtility.ToJson(saveData, true);
-        File.WriteAllText(savePath, json);
+        PlayerPrefs.SetString("saveData", json);
+        PlayerPrefs.Save();
     }
 
     public void Load()
     {
-        if (File.Exists(savePath))
+        if (PlayerPrefs.HasKey("saveData"))
         {
-            string json = File.ReadAllText(savePath);
+            string json = PlayerPrefs.GetString("saveData");
             saveData = JsonUtility.FromJson<PlayerSaveData>(json);
             //File.Delete(savePath); // Yüklədikdən sonra faylı silirik
         }
@@ -131,14 +133,14 @@ public class SaveManager : MonoBehaviour
             saveData = new PlayerSaveData(); // Default dəyərlərlə
             saveData.playerData.health = 4;
             saveData.playerData.coins = 0;
-            saveData.playerData.currentLevel = 2;
+            saveData.playerData.currentLevel = 1;
             Save(); // İlk dəfə yaradıb saxlayırıq
         }
     }
 
     public void ResetData()
     {
-        File.Delete(savePath);
+        PlayerPrefs.DeleteKey("saveData");
         Load();
     }
 }

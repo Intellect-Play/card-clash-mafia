@@ -14,7 +14,7 @@ public class GetcardImage : MonoBehaviour
         {
             CardImages card = new CardImages();
             card.cardType = cardPrefab.GetComponent<CardBase>()._CardType;
-            card.cardImage = cardPrefab.GetComponent<Image>().sprite;
+            card.cardImage = cardPrefab.GetComponent<CardBase>().mCardSO._CardImage;
             cardImagesList.Add(card);
         }
     }

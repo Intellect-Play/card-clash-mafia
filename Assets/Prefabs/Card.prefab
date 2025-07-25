@@ -268,4 +268,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e90869bfb168f784f846fe7a8e9fa616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mCardNameText: {fileID: 6817359068653705225}
+  cardNameText: {fileID: 0}
+  triggerHeight: 150
+  returnDuration: 0.5
+  card: {fileID: 0}
+  spawnParent: {fileID: 0}
+  moveImage: {fileID: 0}
+  cardType: {fileID: 0}
+  Hovering: 0
+  CanDrag: 0
+  onDragBool: 0
+  MoveCard: 0
+  Used: 0

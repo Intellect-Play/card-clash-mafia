@@ -37,29 +37,29 @@ public class TutorialManager : MonoBehaviour
         HideHandTouchEndTurn();
         if (PlayerPrefs.GetInt("Tutorial2", 0) == 0)
         {
-            //IsTutorialActive = true;
-            //tutorialLevel = 0;
-            //StartButton.interactable = true;
-            //ShopButton.interactable = false;
-            //ShopButton.GetComponent<ShopButtons>().ShopTutorial();
+            IsTutorialActive = true;
+            tutorialLevel = 0;
+            StartButton.interactable = true;
+            ShopButton.interactable = false;
+            ShopButton.GetComponent<ShopButtons>().ShopTutorial();
         }
         else if(PlayerPrefs.GetInt("Tutorial2", 0) == 1)
         {
-            //tutorialHandAnimator.gameObject.SetActive(true);
-            //IsTutorialActive = true;
-            //ShopButton.GetComponent<ShopButtons>().ShopTutorial();
+            tutorialHandAnimator.gameObject.SetActive(true);
+            IsTutorialActive = true;
+            ShopButton.GetComponent<ShopButtons>().ShopTutorial();
 
-            //StartButton.interactable = false;
-            //ShopButton.interactable = true;
+            StartButton.interactable = false;
+            ShopButton.interactable = true;
 
         }
         else
         {
 
-
+            HideTutorialHand();
+            IsTutorialActive = false;
         }
-        HideTutorialHand();
-        IsTutorialActive = false;
+    
     }
 
     public void SelectCard(int currentCardCount)
@@ -192,7 +192,7 @@ public class TutorialManager : MonoBehaviour
     public void TutorialHandClickButton(RectTransform rectTransform)
     {
         if (!IsTutorialActive) return;
-        tutorialHandAnimator.ShowTapAnimationUI(rectTransform, ButtonClickOffset);
+        tutorialHandAnimator.ShowTapAnimationUI(rectTransform, Vector3.zero);
     }
     public void TutorialHandClickButtonClose(RectTransform rectTransform)
     {

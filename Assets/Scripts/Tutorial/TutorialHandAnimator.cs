@@ -36,6 +36,7 @@ public class TutorialHandAnimator : MonoBehaviour
         // Dünyadakı mövqe
         Vector3 worldPos = uiTarget.position + offset;
 
+
         // Ekran mövqeyi
         Vector2 screenPos = RectTransformUtility.WorldToScreenPoint(
             canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : Camera.main,
@@ -98,7 +99,7 @@ public class TutorialHandAnimator : MonoBehaviour
                 canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : Camera.main,
                 out localPoint
             );
-
+            Debug.Log(localPoint);
             handImage.localPosition = localPoint;
         }
 
@@ -125,12 +126,12 @@ public class TutorialHandAnimator : MonoBehaviour
 
         // 1. Dünyadakı (world space) mövqeni tap
         Vector3 worldPos = uiTarget.position + offset;
-
         // 2. Ekran koordinatını al
         Vector2 screenPos = RectTransformUtility.WorldToScreenPoint(
             canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : Camera.main,
             worldPos
         );
+        Debug.Log(worldPos+" "+ screenPos);
 
         // 3. UI parent içində lokal mövqe tap
         Vector2 localPoint;

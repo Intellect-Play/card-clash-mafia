@@ -72,7 +72,6 @@ public class GameManager : MonoBehaviour
         SaveManager.Instance.saveData.playerData.coins += mCoin.CoinPlayerInPlay;
         SaveManager.Instance.saveData.playerData.currentLevel += 1;
 
-        TinySauce.OnGameFinished(true, SaveManager.Instance.saveData.playerData.currentLevel);
 
         SaveManager.Instance.Save();
         GameUI.Instance.WinGame();
@@ -85,7 +84,6 @@ public class GameManager : MonoBehaviour
         isGameOver = true;
        // SaveManager.Instance.saveData.playerData.coins += mCoin.CoinPlayerInPlay;
        // SaveManager.Instance.Save();
-        TinySauce.OnGameFinished(false, SaveManager.Instance.saveData.playerData.currentLevel);
 
         GameUI.Instance.LoseGame();
     }

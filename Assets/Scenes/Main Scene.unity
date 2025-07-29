@@ -4792,8 +4792,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6625a2dd8bcc64fa0a100f9345ec68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bgImage: {fileID: 0}
-  backgroundSprites: []
+  bgImage: {fileID: 1542427296}
+  backgroundSprites:
+  - {fileID: 21300000, guid: 8055d9760e583cb4ab9b35c3742aae37, type: 3}
+  - {fileID: 21300000, guid: f5a8b6178f572474689dd3a711d138e0, type: 3}
 --- !u!1 &1569241620
 GameObject:
   m_ObjectHideFlags: 0

@@ -29,6 +29,8 @@ public class SaveManager : MonoBehaviour
             }
             //saveData.playerData.currentLevel = 2;
             //ResetData(); File.Delete(jsonPath);
+
+            // LEVEL YONETIMIIIIIIIIIIIIIII!!!!!!!
             if (saveData.playerData.currentLevel > 10) saveData.playerData.currentLevel = 2;
         }
         else

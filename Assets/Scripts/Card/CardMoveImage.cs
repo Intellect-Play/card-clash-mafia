@@ -26,7 +26,7 @@ public class CardMoveImage : MonoBehaviour
 
     [Header("FadeInOut")]
     private float fadeDuration = 0.3f;
-    private float fadeColor = 0.7f;
+    private float fadeColor = 0.4f;
 
     //private setting changes to our cards movement
     private Vector3 rotation;

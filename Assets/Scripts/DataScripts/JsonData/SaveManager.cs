@@ -133,7 +133,7 @@ public class SaveManager : MonoBehaviour
             saveData = new PlayerSaveData(); // Default dəyərlərlə
             saveData.playerData.health = 4;
             saveData.playerData.coins = 0;
-            saveData.playerData.currentLevel = 2;
+            saveData.playerData.currentLevel = 1;
             Save(); // İlk dəfə yaradıb saxlayırıq
         }
     }

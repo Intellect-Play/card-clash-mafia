@@ -77,21 +77,22 @@ public class ShopManager : MonoBehaviour
         BuyorUpgradeButton.button.onClick.AddListener(BuyOrUpgradeFunc);
         yield return new WaitForSeconds(.1f);
 
-        if (PlayerPrefs.GetInt("Tutorial2", 0) == 1)
-        {
-           // PlayerPrefs.SetInt("Tutorial", 2);
-            TutorialManager.Instance.TutorialHandClickButton(cardButtons[5].cardObject.GetComponent<RectTransform>());
-            for (int i = 0; i < cardButtons.Count; i++)
-            {
-                if (i!=5)
-                {
-                    cardButtons[i].cardButtonUI.GetComponent<Button>().interactable = false; // Diğer kartları devre dışı bırak
-                }
-            }
-            CloseButton.interactable = false;
-        }else if(PlayerPrefs.GetInt("Tutorial2", 0) == 2) TutorialManager.Instance.HideTutorialHand();
+        //if (PlayerPrefs.GetInt("Tutorial2", 0) == 1)
+        //{
+        //   // PlayerPrefs.SetInt("Tutorial", 2);
+        //    TutorialManager.Instance.TutorialHandClickButton(cardButtons[5].cardObject.GetComponent<RectTransform>());
+        //    for (int i = 0; i < cardButtons.Count; i++)
+        //    {
+        //        if (i!=5)
+        //        {
+        //            cardButtons[i].cardButtonUI.GetComponent<Button>().interactable = false; // Diğer kartları devre dışı bırak
+        //        }
+        //    }
+        //    CloseButton.interactable = false;
+        //}else if(PlayerPrefs.GetInt("Tutorial2", 0) == 2) TutorialManager.Instance.HideTutorialHand();
 
-        else CloseButton.interactable = true;
+        //else
+        CloseButton.interactable = true;
 
     }
 

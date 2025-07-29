@@ -121,7 +121,7 @@ public class TutorialHandAnimator : MonoBehaviour
             HideHand();
             return;
         }
-
+        Debug.Log("ShowTapAnimationUI");
         TweenPlay = true;
 
         // 1. Dünyadakı (world space) mövqeni tap

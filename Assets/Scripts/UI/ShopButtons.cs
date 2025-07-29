@@ -26,7 +26,7 @@ public class ShopButtons : MonoBehaviour
         //{
         //    Debug.Log("ShopManager: ShopTutorial - Tutorial Level 1");
 
-        //    TutorialManager.Instance.TutorialHandClickButtonShop(this.GetComponent<RectTransform>());
+        //    TutorialManager.Instance.TutorialHandClickButton(this.GetComponent<RectTransform>());
 
         //}
 
@@ -66,15 +66,15 @@ public class ShopButtons : MonoBehaviour
     }
     public void OnClickCloseShopButton()
     {
-        if (PlayerPrefs.GetInt("Tutorial2", 0) == 2)
-        {
-            PlayerPrefs.SetInt("Tutorial2",3);
-            TutorialManager.Instance.HideTutorialHand();
+        //if (PlayerPrefs.GetInt("Tutorial2", 0) == 2)
+        //{
+        //    PlayerPrefs.SetInt("Tutorial2",3);
+        //    TutorialManager.Instance.HideTutorialHand();
 
-            TutorialManager.Instance.IsTutorialActive=false;
+        //    TutorialManager.Instance.IsTutorialActive=false;
 
-            Debug.Log("ShopManager: SelectCard - Tutorial Hand Click");
-        }
+        //    Debug.Log("ShopManager: SelectCard - Tutorial Hand Click");
+        //}
         GameManagerMain.Instance.CloseShop();
     }
 }

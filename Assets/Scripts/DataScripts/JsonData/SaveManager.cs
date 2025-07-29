@@ -25,7 +25,7 @@ public class SaveManager : MonoBehaviour
             //saveData.playerData.coins = 50000; // Test purposes, remove later
             if (PlayerPrefs.GetInt("Tutorial2", 0) == 0)
             {
-                ResetData();
+                //ResetData();
             }
             //saveData.playerData.currentLevel = 2;
             //ResetData(); File.Delete(jsonPath);
@@ -133,7 +133,7 @@ public class SaveManager : MonoBehaviour
             saveData = new PlayerSaveData(); // Default dəyərlərlə
             saveData.playerData.health = 4;
             saveData.playerData.coins = 0;
-            saveData.playerData.currentLevel = 1;
+            saveData.playerData.currentLevel = 2;
             Save(); // İlk dəfə yaradıb saxlayırıq
         }
     }
